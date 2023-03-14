@@ -1,161 +1,219 @@
 /*CSS DOCUMENT*/
 /*CSS DOCUMENT*/
+
 html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
 body{
 	font-family: "new-order", sans-serif;
-    font-weight: 50;
     font-style: normal;
-    background-color: rgb(245, 245, 245);
+    background-color: rgba(63, 113, 0, .15);
 }
+
+
 div.home-container { 
-background: url(home-background.jpg) center center fixed;
-background-size: cover;
-position: relative;
-min-height: 100vh;
-max-width: 60em;
-margin: auto;
-background-color: rgb(255, 255, 255);
+	background: url(home-background.jpg) center center fixed;
+	background-size: cover;
+	position: relative;
+	min-height: 100vh;
+    max-width: 60rem;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
 }
+
 div.container { 
-position: relative;
-min-height: 100vh;
-max-width: 60em;
-margin: auto;
-background-color: rgb(255, 255, 255);
+	position: relative;
+	min-height: 100vh;
+    max-width: 60rem;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
 }
+
+
 /* >>> IMPORTANT: you have to change the wrap the content of your home page (index) in a div with a class home-container to make it work. If you used a div with the class container on your home, you’ll only need to change the name of the class.  */
+
+
 main { 
-padding: 1.5rem 1.5rem 6rem;
-}
+	padding: 1.5rem 1.5rem 6rem;
+	}
+
 img {
-width: 100%; /*Please leave this line.*/
-display: block;
+    width: 100%; /*Please leave this line.*/
+     display: block;
 }
+
 header {
-display: grid;
-grid-template-columns: 18em auto;
-background: rgb(245, 245, 245);
-padding: 1.5rem 1.5rem;
-}
+	display: grid;
+	grid-template-columns: 18em auto;
+	background: rgb(255, 255, 255);
+	padding: 1.5rem 1.5rem;
+    border-bottom: double;
+    border-bottom-style: thin;
+    border-bottom-color: rgb(63, 113, 0);
+	}
+
 h1 {
-width: 20em;
-margin-top: 1em;
-max-width: 100%;
-}
+	width: 20rem;
+    margin-top: 1em;
+    max-width: 100%;
+	}
+
 h2, h3, h4 {
 	font-family: "new-order", sans-serif;
     font-weight: 700;
     font-style: normal;
 	}
+
 h2 {
-font-size: 2em;
-margin: 0.5em 0em 0em;
-color: rgb(63, 113, 0);
-}
+	font-size: 2em;
+	margin: 0.5em 0em 0em;
+    color: rgb(63, 113, 0);
+	}
+	
 h3 {
-font-size: 1.5em;
-margin: 0.5em 0em 0.75em;
+	font-size: 1.5em;
+	margin: 0.5em 0em 0.75em;
+   
 }
+
+
 a {
-text-decoration: none;
-}
+	text-decoration: none;
+	}
+
 nav ul  {
-text-align: right;
-margin-top: 2em;
-}
+	text-align: right;
+    margin-top: 2em;
+	}
+	
 ul li 	{
-list-style-type: none;
+	list-style-type: none;
 }
+
 figure {
-margin-bottom: 1em;
+	margin-bottom: 1em;
 }
+
 main.menu ul {
-margin: 1rem 0rem;
+		margin: 1rem 0rem;
 }	
+
 main.menu ul li {
-margin: 0.5em 0.5em 0.5em;
-display: grid;
-grid-template-columns: auto auto;
-grid-template-rows: auto auto;
+		margin: 0.5em 0.5em 0.5em;
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
 }	
+
 p {
-margin: .5em 0em 0.5em;
-}
+	margin: .5em 0em 0.5em;
+	}
+	
 p.description {
-grid-column: 1;
-margin: 0.5em 0em 1em;
-}
+	grid-column: 1;
+	margin: 0.5em 0em 1em;
+	}
+	
 p.price {
-grid-row: 1/2;
-grid-column: 2/3;
-color: rgb(63, 113, 0);
-text-align: right;
-margin: 0em;
-}
+	grid-row: 1/2;
+	grid-column: 2/3;
+	color: rgb(63, 113, 0);
+	text-align: right;
+	margin: 0em;
+	}
+	
 nav ul li {
-text-transform: uppercase;
-font-weight: bold;
-margin-bottom: 1.5em;
-margin-top: 1em;
-margin-right: 0.5em;
-}
+	text-transform: uppercase;
+	font-weight: 100;
+	margin-bottom: 1.5em;
+	margin-top: 1em;
+	margin-right: 0.5em;
+	}
+
 nav ul li a {
-color: rgb(245, 245, 245);
-background-color: rgb(63, 113, 0);
-padding: 0.5em;
-}
+	color: rgb(63, 113, 0);
+	padding: 0.5em;
+	}
+	
+
 p.slogan {
 	font-size: 5em;
 	font-family: "new-order", sans-serif;
-  font-weight: 50;
-  font-style: normal;
-  padding: 0.5em 0.25em 1.25em;
+    font-weight: 50;
+    font-style: normal;
+	padding: 0.5em 0.25em 1.25em;
 	color: rgb(245, 245, 245);
-  margin: 0em;
-  display: inline-block;
-  padding: .25em 0;
-  background:rgba(63, 113, 0, .2) ;
+    margin: 0em;
+    display: inline-block;
+    padding: .25em 0;
+    background:rgba(63, 113, 0, .4) ;
 	}
+	
 footer {
-position: absolute;
-bottom: 0;
-width: 100%;
-height: 4rem; 
-box-sizing: border-box;
-padding: 1.5em 1.5em;
-margin: 0;  
-background:rgb(63, 113, 0);
-color: rgb(245, 245, 245)
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4rem; 
+  box-sizing: border-box;
+  padding: 1.5em 1.5em;
+  margin: 0;  
+  background:rgb(63, 113, 0);
+  color: rgb(245, 245, 245)
 }
+
 address {
-color: rgb(245, 245, 245);
-font-size: 1.5em;
-}
+	color: rgb(245, 245, 245);
+	font-size: 2em;
+    background:rgba(63, 113, 0, .4) ;
+	}
 p.contact {
-margin: 0em;
-}
+    margin: 0em;
+	}
+
 nav ul li.selected a { 
-background-color: rgba(63, 113, 0, .5);
-color: rgb(245,245,255)
+    color: rgb(63, 113, 0);
+	font-weight: 700;
 }
+
 article {
-max-width: 40em;
-margin-left: auto;
-margin-right: auto;   
+ 
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;   
 }
-@media screen and (min-width: 60em) {
-nav ul li {
-display: inline;
-font-size: 1.7em;
+
+article.location {
+    margin-top: 2em;
+    border-top: rgb(63, 113, 0) solid 1.5px;
 }
-main.menu ul {
-margin: 1em 1em 1em;
-display: grid;
-grid-template-columns: auto auto;
-grid-template-rows: auto auto;
-column-gap: 5em;
+
+@media screen and (min-width: 60rem) {
+  nav ul li {
+    display: inline;
+    font-size: 1.7em;
+	}
+    
+    main.menu ul {
+    margin: 1em 1em 1em;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 5em;
 }
-h1 {
-margin-top: 0em;
-}
-}
+    h1 {
+	margin-top: 0em;
+	}
+    
+    article.location {
+     display: grid;
+     grid-template-columns: auto auto;
+    }
+
+ }
+
+
+
+
+
+
+
+
